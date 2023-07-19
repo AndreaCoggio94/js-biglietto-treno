@@ -40,6 +40,11 @@ if (isNaN(numKm) || isNaN(age)) {
   // Decimal Price
   let finalCost = totalCost.toFixed(2);
   // Formula for printed result
-  let printedCost = "Il costo totale è di " + finalCost + "€";
+  let finalCostString = finalCost.toString();
+  console.log(typeof finalCostString);
+  let printedCost = "Il costo totale è di " + finalCostString + "€";
+
   console.log(printedCost);
+  console.log(typeof printedCost);
+  document.getElementById("questo").innerHTML = printedCost;
 }
