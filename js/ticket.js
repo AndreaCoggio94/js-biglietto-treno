@@ -37,7 +37,9 @@ if (isNaN(numKm) || isNaN(age)) {
     totalCost = totalCost - (totalCost * discountSenior) / 100;
   }
 
+  // Decimal Price
+  let finalCost = totalCost.toFixed(2);
   // Formula for printed result
-  let printedCost = "Il costo totale è di " + totalCost + "€";
+  let printedCost = "Il costo totale è di " + finalCost + "€";
   console.log(printedCost);
 }
