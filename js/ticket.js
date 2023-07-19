@@ -3,12 +3,10 @@
 // Kilometers to travel
 
 const numKm = parseInt(prompt("Quanti Kilometri dovrai percorrere?"));
-console.log(numKm);
 
 // Age of passenger
 
 const age = parseInt(prompt("Quanti hanni hai?"));
-console.log(age);
 
 // Cost per kilometer
 
@@ -23,7 +21,6 @@ const discountSenior = 40;
 // Calculated Price
 
 let totalCost = numKm * costKm;
-console.log(totalCost);
 
 if (isNaN(numKm) || isNaN(age)) {
   alert("Inserisci solo valori numeri, grazie!");
@@ -38,13 +35,14 @@ if (isNaN(numKm) || isNaN(age)) {
   }
 
   // Decimal Price
+
   let finalCost = totalCost.toFixed(2);
+
   // Formula for printed result
+
   let finalCostString = finalCost.toString();
-  console.log(typeof finalCostString);
+
   let printedCost = "Il costo totale è di " + finalCostString + "€";
 
-  console.log(printedCost);
-  console.log(typeof printedCost);
   document.getElementById("questo").innerHTML = printedCost;
 }
