@@ -29,8 +29,8 @@ if (isNaN(numKm) || isNaN(age)) {
   if (age < 18) {
     totalCost = totalCost - (totalCost * discountMinor) / 100;
   }
-  //   age >= 65
-  else if (age >= 65) {
+  //   age > 65
+  else if (age > 65) {
     totalCost = totalCost - (totalCost * discountSenior) / 100;
   }
 
